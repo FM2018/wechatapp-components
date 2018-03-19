@@ -1,0 +1,17 @@
+.toCartBtn {
+	width: 100rpx;
+	height: 100rpx;
+	position: fixed;
+	bottom: 50rpx; 
+	right: 40rpx;
+	border-radius: 50%;
+	overflow: hidden;
+	background: #ff9933;
+	box-shadow: 0 20rpx 30rpx rgba(255,153,51,.6);
+	display: flex;
+	align-items: center;
+	justify-content: center; }
+	.toCartBtn image {
+		width: 50%;
+		height: 50%;
+		vertical-align: top; }

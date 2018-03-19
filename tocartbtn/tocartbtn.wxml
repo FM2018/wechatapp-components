@@ -1,0 +1,3 @@
+<view class="toCartBtn" bindtap="toCartPage" hidden="{{btnHidden}}">
+	<image src="/images/icon/buycar_white.png"></image>
+</view>
