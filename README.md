@@ -12,9 +12,8 @@
   可以根据个人需求添加功能
 
 2、banner(轮播图组件)
-
-<banner banners-hidden="{{bannerHidden}}" banner-list="{{bannerList}}" banner-attr-list="{{bannerAttrList}}"></banner>
 在引入组件的页面js文件中定义属性bannerHidden和bannerList
+- <banner banners-hidden="{{bannerHidden}}" banner-list="{{bannerList}}" banner-attr-list="{{bannerAttrList}}"></banner>
 - bannerHidden: 组件是否显示(Boolean)
 - bannerList: 组件的轮播图数据(Array)
 - bannerAttrList: 组件的属性(Object)
