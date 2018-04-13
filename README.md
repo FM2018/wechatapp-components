@@ -32,7 +32,7 @@
     - displayMultipleItems: 1,              //同时显示的滑块数量
     - skipHiddenItemLayout: false,          //是否跳过未显示的滑块布局，设为 true 可优化复杂情况下的滑动性能，但会丢失隐藏状态滑块的布局信息
   }
-  ###当属性不填写的时候，都使用默认值
+- 当属性不填写的时候，都使用默认值
 
 3、tocartbtn(悬浮固定添加跳转购物车页面按钮)
 <tocartbtn btn-hidden="{{btnHidden}}" bindtap=""><tocartbtn>
