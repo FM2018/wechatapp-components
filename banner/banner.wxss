@@ -1,7 +1,7 @@
 .banner {
 	width: 100VW; }
 	.banner .index_banner {
-	  height: 300rpx; }
+	  height: 380rpx; }
 	  .banner .index_banner .home_banner_img {
 	    width: 100VW;
 	    vertical-align: top; }

@@ -1,0 +1,13 @@
+<view class="popUp {{showPop == true ? 'showPop':''}}">
+	<view class="contentBox">
+		<view class="contentTitle">
+			注意
+		</view>
+		<view class="contentText">
+			{{title}}
+		</view>
+		<view class="closePopUp" bindtap="closePopUp">
+			X
+		</view>
+	</view>
+</view>

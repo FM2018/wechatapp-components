@@ -7,7 +7,11 @@ Component({
     bannerList: {  
       type: Array,  
       value: [],  
-    }  
+    },
+    bannerAttrList: {
+      type: Object,
+      value: {}
+    },
   },  
   data: {  
     // 这里是一些组件内部数据  

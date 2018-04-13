@@ -1,0 +1,44 @@
+.popUp {
+	width: 100VW;
+	height: 100VH;
+	position: fixed;
+	top: 0;
+	left: 0;
+	background: rgba(0,0,0,.0);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	z-index: 0; }
+	.popUp .contentBox {
+		width: 70%;
+		height: 40%;
+		box-sizing: border-box;
+		padding: 20rpx 40rpx;
+		transition: all 0.5s;
+		background: rgba(0,0,0,.0);
+		color: rgba(0,0,0,.0);
+		border-radius: 40rpx;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		position: relative; }
+		.popUp .contentBox .contentTitle {
+			padding-bottom: 26rpx; }
+		.popUp .contentBox .contentText {
+			font-size: 32rpx;
+			line-height: 46rpx;
+			width: 100%;
+			text-align: left; }
+		.closePopUp {
+			position: absolute;
+			right: 20rpx;
+			top: 20rpx;
+			color: white;
+		}
+.showPop {
+	z-index: 99; }
+	.showPop  .contentBox {
+		transition: all 0.5s;
+		background: rgba(0,0,0,.6);
+		color: #fff; }
