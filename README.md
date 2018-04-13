@@ -15,9 +15,9 @@
 
 <banner banners-hidden="{{bannerHidden}}" banner-list="{{bannerList}}" banner-attr-list="{{bannerAttrList}}"></banner>
 在引入组件的页面js文件中定义属性bannerHidden和bannerList
-bannerHidden: 组件是否显示(Boolean)
-bannerList: 组件的轮播图数据(Array)
-bannerAttrList: 组件的属性(Object)
+- bannerHidden: 组件是否显示(Boolean)
+- bannerList: 组件的轮播图数据(Array)
+- bannerAttrList: 组件的属性(Object)
   bannerAttrList:{
     - indicatorDots: true,                  //是否显示面板指示点
     - indicatorColor: "rgba(0, 0, 0, .3)",  //指示点颜色 
