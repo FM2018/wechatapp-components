@@ -33,7 +33,7 @@
 	* bannerHidden: 组件是否隐藏; 传参Boolean类型:false,如果不需要,可以在组件的js文件中自行删除这一参数;
  	* bannerList: 轮播组件所需的数据,传参数组Array类型:[],图片、文本等;
   	* 例子: 
-    ```Javascript
+```Javascript
     [
       {
         id: 1,
@@ -46,7 +46,7 @@
         text: "全场实付满68包邮，详情请联系客服人员",
       }
     ]
-    ```Javascript
+```Javascript
     [
       {
         id: 1,
@@ -59,7 +59,7 @@
         img: "/images/img/banner.png"
       }
     ]
-    ```
+```
 	* bannerAttrList: banner组件中swiper组件的属性，如果不传递任何参数，则全部使用组件默认的参数;
   	* - indicatorDots: true,                  //是否显示面板指示点
   	* - indicatorColor: "rgba(0, 0, 0, .3)",  //指示点颜色 
