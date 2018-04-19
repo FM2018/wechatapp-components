@@ -1,7 +1,7 @@
 # wechatapp-components 小程序组件库
 
 ********
-封装的一些小程序组件
+封装的一些小程序组件<br>
 1、mask: 第一次进入页面的时候弹出遮罩层，显示正在加载loading动画;<br>
 2、banner: 轮播图组件，传入参数(swiper组件参数,不传为默认;轮播组件数据,图片或者文本);<br>
 3、tocartbtn: 悬浮添加购物车按钮;<br>
@@ -18,12 +18,16 @@
     }
   }
   ```
-  * 在WXML文件中加入: \<mask>\</mask>
-  * 效果<br>
+* 在WXML文件中加入: \<mask>\</mask>
+* 效果<br>
   ![mask](https://github.com/FM2018/wechatapp-components/raw/master/img/mask.png)
 
 ### 2、banner(轮播图组件)
-* 在
+* .json文件中引入组件，同上;
+* .wxml中引入组件<br>
+```Html
+<banner banner-hidden="{{bannerHidden}}" banner-list="{{bannerList}}" banner-attr-list="{{bannerAttrList}}" vertical="{{vertical}}">
+```
 在引入组件的页面js文件中定义属性bannerHidden和bannerList
 - '<banner banners-hidden="{{bannerHidden}}" banner-list="{{bannerList}}" banner-attr-list="{{bannerAttrList}}"></banner>'
 - bannerHidden: 组件是否显示(Boolean)
