@@ -45,9 +45,10 @@
         id: 3,
         text: "全场实付满68包邮，详情请联系客服人员",
       }
-    ]   
-<br>
+    ]
+```
 ![bannerY](https://github.com/FM2018/wechatapp-components/raw/master/img/banner-y.jpg)
+```Javascript
     [
       {
         id: 1,
