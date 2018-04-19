@@ -1,15 +1,25 @@
-# wechatapp-components 个人组件库
+# wechatapp-components 小程序组件库
 
 ********
-个人封装的一些小程序的小组件
-
+封装的一些小程序组件
+1、mask: 第一次进入页面的时候弹出遮罩层，显示正在加载loading动画;<br>
+2、banner: 轮播图组件，传入参数(swiper组件参数,不传为默认;轮播组件数据,图片或者文本);<br>
+3、tocartbtn: 悬浮添加购物车按钮;<br>
+4、popUp: 弹出层,显示提示内容,可点击确定;
 ********
-# 使用方法 
-1、mask(进入页面时的加载缓冲动画遮罩层)
-在根目录下面创建components文件夹，将组件文件夹放入
-在需要引入组件的.wxml文件中加上 
-  <mask></mask>
-  可以根据个人需求添加功能
+
+# 使用方法
+1、mask
+  * 在json文件中引入外部根目录下面的Components文件夹中的mask组件;<br>
+  ```Javascript
+  {
+    "usingComponents": {
+      "mask": "/components/mask/mask"
+    }
+  }
+  ```
+  
+  * 在WXML文件中加入: \<mask>\</mask>
 
 2、banner(轮播图组件)
 在引入组件的页面js文件中定义属性bannerHidden和bannerList
