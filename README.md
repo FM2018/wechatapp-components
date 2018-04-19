@@ -10,7 +10,7 @@
 
 # 使用方法
 ### 1、mask<br>
-* 在json文件中引入外部根目录下面的Components文件夹中的mask组件;<br>
+* 在json文件中引入外部根目录下面的components文件夹中的mask组件;<br>
   ```Javascript
   {
     "usingComponents": {
@@ -26,26 +26,60 @@
 * .json文件中引入组件，同上;
 * .wxml中引入组件<br>
 ```Html
-<banner banner-hidden="{{bannerHidden}}" banner-list="{{bannerList}}" banner-attr-list="{{bannerAttrList}}" vertical="{{vertical}}">
+<banner banner-hidden="{{bannerHidden}}" banner-list="{{bannerList}}" banner-attr-list="{{bannerAttrList}}" vertical="{{vertical}}"></banner>
 ```
+* .js文件的data中添加banner组件所需的参数: <br>
+  一共四组参数: <br>
+  * bannerHidden: 组件是否隐藏; 传参Boolean类型:false,如果不需要,可以在组件的js文件中自行删除这一参数;
+  * bannerList: 轮播组件所需的数据,传参数组Array类型:[],图片、文本等;
+    * 例子: 
+    ```Javascript
+    bannerList: [ //文本
+      {
+        id: 1,
+        text: "全场实付满68包邮，详情请联系客服人员",
+      },{
+        id: 2,
+        text: "全场实付满68包邮，详情请联系客服人员",
+      },{
+        id: 3,
+        text: "全场实付满68包邮，详情请联系客服人员",
+      }
+    ],
+    bannerList: [ //图片
+      {
+        id: 1,
+        img: "/images/img/banner.png" 
+      },{
+        id: 2,
+        img: "/images/img/banner.png"
+      },{
+        id: 3,
+        img: "/images/img/banner.png"
+      }
+    ],
+    ```
+  * bannerAttrList: banner组件中swiper组件的属性，如果不传递任何参数，则全部使用组件默认的参数;
+    * - indicatorDots: true,                  //是否显示面板指示点
+    * - indicatorColor: "rgba(0, 0, 0, .3)",  //指示点颜色 
+    * - indicatorActiveColor: "blue",         //当前选中的指示点颜色
+    * - autoplay: true,                       //是否自动切换
+    * - current: 0,                           //当前所在滑块的 index
+    * - interval: 4000,                       //自动切换时间间隔
+    * - duration: 500,                        //滑动动画时长
+    * - circular: true,                       //是否采用衔接滑动
+    * - previousMargin: "0px",                //前边距，可用于露出前一项的一小部分，接受 px 和 rpx 值
+    * - nextMargin: "0px",                    //后边距，可用于露出后一项的一小部分，接受 px 和 rpx 值
+    * - displayMultipleItems: 1,              //同时显示的滑块数量
+    * - skipHiddenItemLayout: false,          //是否跳过未显示的滑块布局，设为 true 可优化复杂情况下的滑动性能，但会丢失隐藏状态滑块的布局信息
+  
+
 在引入组件的页面js文件中定义属性bannerHidden和bannerList
-- '<banner banners-hidden="{{bannerHidden}}" banner-list="{{bannerList}}" banner-attr-list="{{bannerAttrList}}"></banner>'
 - bannerHidden: 组件是否显示(Boolean)
 - bannerList: 组件的轮播图数据(Array)
 - bannerAttrList: 组件的属性(Object)
 - bannerAttrList:{
-    - indicatorDots: true,                  //是否显示面板指示点
-    - indicatorColor: "rgba(0, 0, 0, .3)",  //指示点颜色 
-    - indicatorActiveColor: "blue",         //当前选中的指示点颜色
-    - autoplay: true,                       //是否自动切换
-    - current: 0,                           //当前所在滑块的 index
-    - interval: 4000,                       //自动切换时间间隔
-    - duration: 500,                        //滑动动画时长
-    - circular: true,                       //是否采用衔接滑动
-    - previousMargin: "0px",                //前边距，可用于露出前一项的一小部分，接受 px 和 rpx 值
-    - nextMargin: "0px",                    //后边距，可用于露出后一项的一小部分，接受 px 和 rpx 值
-    - displayMultipleItems: 1,              //同时显示的滑块数量
-    - skipHiddenItemLayout: false,          //是否跳过未显示的滑块布局，设为 true 可优化复杂情况下的滑动性能，但会丢失隐藏状态滑块的布局信息
+    
   }
 - 当属性不填写的时候，都使用默认值
 
