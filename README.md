@@ -47,7 +47,7 @@
       }
     ]
 ```
-![bannerY](https://github.com/FM2018/wechatapp-components/raw/master/img/banner-y.jpg)
+![bannerY](https://github.com/FM2018/wechatapp-components/raw/master/img/banner-y.png)
 ```Javascript
     [
       {
@@ -62,7 +62,7 @@
       }
     ]
 ``` 
-![bannerX](https://github.com/FM2018/wechatapp-components/raw/master/img/banner-x.jpg)
+![bannerX](https://github.com/FM2018/wechatapp-components/raw/master/img/banner-x.png)
     
  * bannerAttrList: banner组件中swiper组件的属性，如果不传递任何参数，则全部使用组件默认的参数;
  	- indicatorDots: true,　　　　　　　　　　//是否显示面板指示点
