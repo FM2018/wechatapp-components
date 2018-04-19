@@ -1,5 +1,7 @@
 <view class="banner" hidden='{{bannerHidden}}'>
-	<swiper indicator-dots="{{bannerAttrList.indicatorDots ? bannerAttrList.indicatorDots: 'false'}}"
+	<swiper wx:if="{{vertical}}"
+    vertical="true"
+    indicator-dots="{{bannerAttrList.indicatorDots ? bannerAttrList.indicatorDots: 'false'}}"
 	  autoplay="{{bannerAttrList.autoplay ? bannerAttrList.autoplay: 'true'}}"
 	  circular="{{bannerAttrList.circular ? bannerAttrList.circular: 'false'}}"
     indicator-color="{{bannerAttrList.indicatorColor ? bannerAttrList.indicatorColor: 'rgba(0, 0, 0, .3)'}}"
@@ -11,12 +13,36 @@
     next-margin="{{bannerAttrList.nextMargin ? bannerAttrList.nextMargin : 0}}"
     display-multiple-items="{{bannerAttrList.displayMultipleItems ? bannerAttrList.displayMultipleItems : 1}}"
     skip-hidden-item-layout="{{bannerAttrList.skipHiddenItemLayout ? bannerAttrList.skipHiddenItemLayout : 'false'}}"
-	  class="index_banner swiper-box">
+	  class="index_banner swiper-box"
+    style="height:{{bannerAttrList.height}}">
   	<swiper-item wx:for="{{bannerList}}"
 				         wx:key="{{index}}"
 				         wx:for-item="list" 
 				         data-id="{{list.id}}">
-      	<image src="{{list.img}}" class="home_banner_img" mode="widthFix"></image>
+      	<image src="{{list.img}}" class="home_banner_img" mode="widthFix" wx:if="{{list.img}}"></image>
+        <view class="text">{{list.text}}</view>
   	</swiper-item> 
 	</swiper>
+  <swiper wx:else indicator-dots="{{bannerAttrList.indicatorDots ? bannerAttrList.indicatorDots: 'false'}}"
+    autoplay="{{bannerAttrList.autoplay ? bannerAttrList.autoplay: 'true'}}"
+    circular="{{bannerAttrList.circular ? bannerAttrList.circular: 'false'}}"
+    indicator-color="{{bannerAttrList.indicatorColor ? bannerAttrList.indicatorColor: 'rgba(0, 0, 0, .3)'}}"
+    indicator-active-color="{{bannerAttrList.indicatorActiveColor ? bannerAttrList.indicatorActiveColor : '#000000' }}"
+    current="{{bannerAttrList.current ? bannerAttrList.current : 0}}"
+    interval="{{bannerAttrList.interval ? bannerAttrList.interval : 4000}}"
+    duration="{{bannerAttrList.duration ? bannerAttrList.duration : 500}}"
+    previous-margin="{{bannerAttrList.previousMargin ? bannerAttrList.previousMargin : 0}}"
+    next-margin="{{bannerAttrList.nextMargin ? bannerAttrList.nextMargin : 0}}"
+    display-multiple-items="{{bannerAttrList.displayMultipleItems ? bannerAttrList.displayMultipleItems : 1}}"
+    skip-hidden-item-layout="{{bannerAttrList.skipHiddenItemLayout ? bannerAttrList.skipHiddenItemLayout : 'false'}}"
+    class="index_banner swiper-box"
+    style="height:{{bannerAttrList.height}}">
+    <swiper-item wx:for="{{bannerList}}"
+                 wx:key="{{index}}"
+                 wx:for-item="list" 
+                 data-id="{{list.id}}">
+        <image src="{{list.img}}" class="home_banner_img" mode="widthFix" wx:if="{{list.img}}"></image>
+        <view class="text">{{list.text}}</view>
+    </swiper-item> 
+  </swiper>
 </view>
