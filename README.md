@@ -33,8 +33,8 @@
 	* bannerHidden: 组件是否隐藏; 传参Boolean类型:false,如果不需要,可以在组件的js文件中自行删除这一参数;
  	* bannerList: 轮播组件所需的数据,传参数组Array类型:[],图片、文本等;
   	* 例子: 
-    ```Json
-    bannerList: [
+    ```Javascript
+    [
       {
         id: 1,
         text: "全场实付满68包邮，详情请联系客服人员",
@@ -46,8 +46,8 @@
         text: "全场实付满68包邮，详情请联系客服人员",
       }
     ]
-    ```Json
-    bannerList: [
+    ```Javascript
+    [
       {
         id: 1,
         img: "/images/img/banner.png" 
