@@ -82,10 +82,13 @@
  * vertical: 轮播图是横向滚动还是纵向滚动,如果有这个参数则是纵向滚动(上下);
 
 ### 3、tocartbtn(悬浮固定添加跳转购物车页面按钮)
+```Html
 <tocartbtn btn-hidden="{{btnHidden}}" bindtap=""><tocartbtn>
+```
 btnHidden: 是否显示
 可以直接在组件上绑定事件
   
 ### 4、popUp(弹出层)
-
-  
+```Html
+<popUp title="{{title}}" show-pop="{{showPop}}"></popUp>
+```
