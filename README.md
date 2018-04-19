@@ -18,8 +18,8 @@
     }
   }
   ```
-  
   * 在WXML文件中加入: \<mask>\</mask>
+  ![mask](http://github.com/FM2018/wechatapp-components/raw/master/img/mask.png)
 
 2、banner(轮播图组件)
 在引入组件的页面js文件中定义属性bannerHidden和bannerList
