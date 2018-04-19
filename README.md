@@ -9,8 +9,8 @@
 ********
 
 # 使用方法
-###1、mask<br>
-  * 在json文件中引入外部根目录下面的Components文件夹中的mask组件;<br>
+### 1、mask<br>
+* 在json文件中引入外部根目录下面的Components文件夹中的mask组件;<br>
   ```Javascript
   {
     "usingComponents": {
@@ -22,8 +22,8 @@
   * 效果<br>
   ![mask](https://github.com/FM2018/wechatapp-components/raw/master/img/mask.png)
 
-###2、banner(轮播图组件)
- * 在
+### 2、banner(轮播图组件)
+* 在
 在引入组件的页面js文件中定义属性bannerHidden和bannerList
 - '<banner banners-hidden="{{bannerHidden}}" banner-list="{{bannerList}}" banner-attr-list="{{bannerAttrList}}"></banner>'
 - bannerHidden: 组件是否显示(Boolean)
@@ -45,11 +45,11 @@
   }
 - 当属性不填写的时候，都使用默认值
 
-###3、tocartbtn(悬浮固定添加跳转购物车页面按钮)
+### 3、tocartbtn(悬浮固定添加跳转购物车页面按钮)
 <tocartbtn btn-hidden="{{btnHidden}}" bindtap=""><tocartbtn>
 btnHidden: 是否显示
 可以直接在组件上绑定事件
   
-###4、popUp(弹出层)
+### 4、popUp(弹出层)
 
   
