@@ -31,8 +31,8 @@
 * .js文件的data中添加banner组件所需的参数: <br>
   一共四组参数: <br>
 	* bannerHidden: 组件是否隐藏; 传参Boolean类型:false,如果不需要,可以在组件的js文件中自行删除这一参数;
- 	* bannerList: 轮播组件所需的数据,传参数组Array类型:[],图片、文本等;
-  	* 例子: 
+	* bannerList: 轮播组件所需的数据,传参数组Array类型:[],图片、文本等;
+	* 例子: 
 ```Javascript
     [
       {
@@ -46,7 +46,6 @@
         text: "全场实付满68包邮，详情请联系客服人员",
       }
     ]
-```Javascript
     [
       {
         id: 1,
@@ -59,20 +58,21 @@
         img: "/images/img/banner.png"
       }
     ]
-```
-	* bannerAttrList: banner组件中swiper组件的属性，如果不传递任何参数，则全部使用组件默认的参数;
-  	* - indicatorDots: true,                  //是否显示面板指示点
-  	* - indicatorColor: "rgba(0, 0, 0, .3)",  //指示点颜色 
-  	* - indicatorActiveColor: "blue",         //当前选中的指示点颜色
-  	* - autoplay: true,                       //是否自动切换
-  	* - current: 0,                           //当前所在滑块的 index
-  	* - interval: 4000,                       //自动切换时间间隔
-  	* - duration: 500,                        //滑动动画时长
-  	* - circular: true,                       //是否采用衔接滑动
-		* - previousMargin: "0px",                //前边距，可用于露出前一项的一小部分，接受 px 和 rpx 值
-  	* - nextMargin: "0px",                    //后边距，可用于露出后一项的一小部分，接受 px 和 rpx 值
-  	* - displayMultipleItems: 1,              //同时显示的滑块数量
-  	* - skipHiddenItemLayout: false,          //是否跳过未显示的滑块布局，设为 true 可优化复杂情况下的滑动性能，但会丢失隐藏状态滑块的布局信息
+``` 
+    
+* bannerAttrList: banner组件中swiper组件的属性，如果不传递任何参数，则全部使用组件默认的参数;
+* - indicatorDots: true,                  //是否显示面板指示点
+* - indicatorColor: "rgba(0, 0, 0, .3)",  //指示点颜色 
+* - indicatorActiveColor: "blue",         //当前选中的指示点颜色
+* - autoplay: true,                       //是否自动切换
+* - current: 0,                           //当前所在滑块的 index
+* - interval: 4000,                       //自动切换时间间隔
+* - duration: 500,                        //滑动动画时长
+* - circular: true,                       //是否采用衔接滑动
+	* - previousMargin: "0px",                //前边距，可用于露出前一项的一小部分，接受 px 和 rpx 值
+* - nextMargin: "0px",                    //后边距，可用于露出后一项的一小部分，接受 px 和 rpx 值
+* - displayMultipleItems: 1,              //同时显示的滑块数量
+* - skipHiddenItemLayout: false,          //是否跳过未显示的滑块布局，设为 true 可优化复杂情况下的滑动性能，但会丢失隐藏状态滑块的布局信息
   
 
 在引入组件的页面js文件中定义属性bannerHidden和bannerList
