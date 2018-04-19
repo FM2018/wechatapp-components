@@ -46,6 +46,9 @@
         text: "全场实付满68包邮，详情请联系客服人员",
       }
     ]
+```
+![bannerY](https://github.com/FM2018/wechatapp-components/raw/master/img/banner-y.jpg)
+```Javascript
     [
       {
         id: 1,
@@ -59,6 +62,7 @@
       }
     ]
 ``` 
+![bannerX](https://github.com/FM2018/wechatapp-components/raw/master/img/banner-x.jpg)
     
  * bannerAttrList: banner组件中swiper组件的属性，如果不传递任何参数，则全部使用组件默认的参数;
  	- indicatorDots: true,　　　　　　　　　　//是否显示面板指示点
@@ -78,10 +82,13 @@
  * vertical: 轮播图是横向滚动还是纵向滚动,如果有这个参数则是纵向滚动(上下);
 
 ### 3、tocartbtn(悬浮固定添加跳转购物车页面按钮)
+```Html
 <tocartbtn btn-hidden="{{btnHidden}}" bindtap=""><tocartbtn>
+```
 btnHidden: 是否显示
 可以直接在组件上绑定事件
   
 ### 4、popUp(弹出层)
-
-  
+```Html
+<popUp title="{{title}}" show-pop="{{showPop}}"></popUp>
+```
