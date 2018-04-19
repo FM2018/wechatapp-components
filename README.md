@@ -45,7 +45,8 @@
         id: 3,
         text: "全场实付满68包邮，详情请联系客服人员",
       }
-    ],
+    ]
+    ```Javascript
     bannerList: [ //图片
       {
         id: 1,
