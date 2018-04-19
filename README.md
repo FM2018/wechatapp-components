@@ -45,7 +45,9 @@
         id: 3,
         text: "全场实付满68包邮，详情请联系客服人员",
       }
-    ]
+    ]   
+<br>
+![bannerY](https://github.com/FM2018/wechatapp-components/raw/master/img/banner-y.jpg)
     [
       {
         id: 1,
@@ -59,6 +61,7 @@
       }
     ]
 ``` 
+![bannerX](https://github.com/FM2018/wechatapp-components/raw/master/img/banner-x.jpg)
     
  * bannerAttrList: banner组件中swiper组件的属性，如果不传递任何参数，则全部使用组件默认的参数;
  	- indicatorDots: true,　　　　　　　　　　//是否显示面板指示点
