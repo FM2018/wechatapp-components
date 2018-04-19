@@ -30,9 +30,9 @@
 ```
 * .js文件的data中添加banner组件所需的参数: <br>
   一共四组参数: <br>
-  * bannerHidden: 组件是否隐藏; 传参Boolean类型:false,如果不需要,可以在组件的js文件中自行删除这一参数;
-  * bannerList: 轮播组件所需的数据,传参数组Array类型:[],图片、文本等;
-    * 例子: 
+  * bannerHidden: 组件是否隐藏; 传参Boolean类型:false,如果不需要,可以在组件的js文件中自行删除这一参数;
+  * bannerList: 轮播组件所需的数据,传参数组Array类型:[],图片、文本等;
+    * 例子: 
     ```Javascript
     bannerList: [ //文本
       {
