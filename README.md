@@ -19,6 +19,7 @@
   }
   ```
   * 在WXML文件中加入: \<mask>\</mask>
+  * 效果<br>
   ![mask](http://github.com/FM2018/wechatapp-components/raw/master/img/mask.png)
 
 2、banner(轮播图组件)
